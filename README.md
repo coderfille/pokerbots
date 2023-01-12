@@ -1,3 +1,3 @@
 # pokerbots
 
-potential source: https://github.com/ihendley/treys
+potential source for evaluation pkg: https://github.com/ihendley/treys
