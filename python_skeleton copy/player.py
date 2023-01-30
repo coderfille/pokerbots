@@ -164,7 +164,7 @@ class Player(Bot):
 
         # raise logic 
         if street <3: #preflop 
-            raise_amount = int(my_pip + continue_cost + 0.5*(pot_total + continue_cost))
+            raise_amount = int(my_pip + continue_cost + 0.4*(pot_total + continue_cost))
         else: #postflop
             raise_amount = int(my_pip + continue_cost + 0.75*(pot_total + continue_cost))
 
@@ -199,7 +199,7 @@ class Player(Bot):
             if continue_cost > 15: 
                 _SCARY = .2
             if continue_cost > 50: 
-                _SCARY = 0.35
+                _SCARY = 0.3
 
             strength = max(0, strength - _SCARY)
             pot_odds = continue_cost/(pot_total + continue_cost)
